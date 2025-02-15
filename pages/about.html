@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">AZoom Car Rental</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="car-listing.html">Car Listings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="car-reservation.html"
+                >Car Reservation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rental-confirm.html"
+                >Rental Confirmation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="car-return.html">Car Return</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">Admin Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- Hero Section -->
+    <section class="hero-image">
+      <div class="hero-text text-center">
+        <h1>About AZoom Car Rental</h1>
+        <p>
+          Your trusted partner for hassle-free car rentals, offering affordable
+          prices, a variety of vehicles, and top-notch customer support.
+        </p>
+      </div>
+    </section>
+
+    <!-- Company Story - Timeline -->
+    <section class="py-5">
+      <div class="container">
+        <h2
+          class="display-5 text-body-emphasis lh-1 mb-3 text-center alice-regular"
+        >
+          Our Journey
+        </h2>
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="timeline-item p-4 border rounded shadow-sm bg-white">
+              <h4 class="fw-bold">🚀 Founded in 2010</h4>
+              <p class="text-muted">
+                We started with a small fleet and a big vision to revolutionize
+                the car rental industry.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="timeline-item p-4 border rounded shadow-sm bg-white">
+              <h4 class="fw-bold">🌍 Expansion in 2015</h4>
+              <p class="text-muted">
+                Grew our operations across multiple cities, offering more
+                choices to travelers.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="timeline-item p-4 border rounded shadow-sm bg-white">
+              <h4 class="fw-bold">🏆 Award-Winning Service</h4>
+              <p class="text-muted">
+                Recognized for outstanding customer service and affordability in
+                2018.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="timeline-item p-4 border rounded shadow-sm bg-white">
+              <h4 class="fw-bold">🔮 Looking Ahead</h4>
+              <p class="text-muted">
+                Our journey continues as we introduce electric and self-driving
+                rental options.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .timeline-item {
+        transition: transform 0.3s ease-in-out;
+      }
+      .timeline-item:hover {
+        transform: scale(1.05);
+      }
+    </style>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row text-center">
+          <!-- Mission -->
+          <div class="col-md-6">
+            <h3
+              class="display-5 text-body-emphasis lh-1 mb-3 text-center alice-regular"
+            >
+              Our Mission
+            </h3>
+            <p class="text-muted mt-3">
+              To provide high-quality, affordable, and hassle-free car rental
+              services tailored to meet the needs of travelers, business
+              professionals, and families. We strive to ensure a smooth and
+              efficient rental experience with top-notch customer support.
+            </p>
+          </div>
+          <!-- Vision -->
+          <div class="col-md-6">
+            <h3
+              class="display-5 text-body-emphasis lh-1 mb-3 text-center alice-regular"
+            >
+              Our Vision
+            </h3>
+            <p class="text-muted mt-3">
+              To be a leading car rental company known for its commitment to
+              excellence, innovation, and customer satisfaction. We envision a
+              world where renting a car is as simple as booking a ride, with a
+              fleet that meets every traveler's needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2
+          class="display-5 text-body-emphasis lh-1 mb-3 text-center alice-regular"
+        >
+          Meet Our Team
+        </h2>
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="team-member p-3 bg-white shadow-sm rounded">
+              <img
+                src="../images/aboutpage/profile1.jpeg"
+                class="profile-img rounded-circle mb-3"
+                alt="CEO"
+              />
+              <h5 class="fw-bold">John Doe</h5>
+              <p class="text-muted">Founder & CEO</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member p-3 bg-white shadow-sm rounded">
+              <img
+                src="../images/aboutpage/profile2.jpeg"
+                class="profile-img rounded-circle mb-3"
+                alt="Manager"
+              />
+              <h5 class="fw-bold">Jane Smith</h5>
+              <p class="text-muted">Operations Manager</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member p-3 bg-white shadow-sm rounded">
+              <img
+                src="../images/aboutpage/profile3.jpg"
+                class="profile-img rounded-circle mb-3"
+                alt="Support"
+              />
+              <h5 class="fw-bold">Mike Johnson</h5>
+              <p class="text-muted">Customer Support Lead</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member p-3 bg-white shadow-sm rounded">
+              <img
+                src="../images/aboutpage/profile4.jpeg"
+                class="profile-img rounded-circle mb-3"
+                alt="Tech"
+              />
+              <h5 class="fw-bold">Emily Brown</h5>
+              <p class="text-muted">Tech Lead</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+    </style>
+
+    <!-- Why Rent from Us Section -->
+    <section class="py-5">
+      <div class="container">
+        <h2
+          class="display-5 text-body-emphasis lh-1 mb-3 text-center alice-regular"
+        >
+          Why Rent from AZoom?
+        </h2>
+        <div class="row text-center">
+          <div class="col-md-3">
+            <div class="feature-card p-4 bg-white shadow-sm rounded">
+              <i class="fas fa-dollar-sign fa-3x text-success mb-3"></i>
+              <h5 class="fw-bold">Affordable Pricing</h5>
+              <p class="text-muted">
+                Get the best deals on car rentals without hidden fees.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-card p-4 bg-white shadow-sm rounded">
+              <i class="fas fa-car fa-3x text-primary mb-3"></i>
+              <h5 class="fw-bold">Wide Variety of Vehicles</h5>
+              <p class="text-muted">Choose from economy cars to luxury SUVs.</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-card p-4 bg-white shadow-sm rounded">
+              <i class="fas fa-mobile-alt fa-3x text-danger mb-3"></i>
+              <h5 class="fw-bold">Easy Booking Process</h5>
+              <p class="text-muted">
+                Reserve your car in minutes with our seamless booking system.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="feature-card p-4 bg-white shadow-sm rounded">
+              <i class="fas fa-headset fa-3x text-warning mb-3"></i>
+              <h5 class="fw-bold">24/7 Customer Support</h5>
+              <p class="text-muted">We're here for you anytime, anywhere.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-lg-start bg-success">
+      <div class="p-4">
+        <div class="row">
+          <!-- First Column: Business Info -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">AZoom Car Rental</h5>
+            <p>123 Main Street, Los Angeles, CA 90001</p>
+            <p>Call: (555) 123-4567</p>
+            <p>Email: support@azoomcarrental.com</p>
+            <p>Web: www.azoomcarrental.com</p>
+          </div>
+
+          <!-- Second Column: Useful Links -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/car-listing.html"
+                  >Car Listings</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/car-reservation.html"
+                  >Car Reservation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/rental-confirm.html"
+                  >Rental Confirmation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/car-return.html">Car Return</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/admin.html">Admin Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Third Column: Newsletter Signup and Social Media Icons -->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Subscribe for Updates</h5>
+            <form class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter your email"
+                aria-label="Email"
+              />
+              <button class="btn btn-primary">Subscribe</button>
+            </form>
+
+            <h5 class="text-uppercase">Follow Us</h5>
+            <ul class="list-unstyled d-flex">
+              <li class="mx-2">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-facebook fa-2x"></i
+                ></a>
+              </li>
+              <li class="mx-2">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-twitter fa-2x"></i
+                ></a>
+              </li>
+              <li class="mx-2">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-instagram fa-2x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3 primarybg-light">
+        © 2024 AZoom Car Rental. All rights reserved.
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+/* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Quicksand:wght@300..700&display=swap');
+
+:root {
+  --primary-dark-green: #0f5138;
+  --primary-light-green: #508b71;
+  --primary-brown: #b06b34;
+  --primary-white: #ffffff;
+  --secondary-green: #7e9764;
+  --secondary-black: #000000;
+  --secondary-peach: #ea9f7c;
+}
+
+body {
+  font-family: "Quicksand", sans-serif !important;
+  font-weight: normal;
+}
+
+.bg-secondarycolor {
+  background-color: var(--secondary-green);
+}
+
+.btn-primary {
+  background-color: var(--primary-light-green) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark-green) !important;
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--primary-dark-green) !important;
+}
+
+.alice-regular {
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.primarybg-dark {
+  background-color: var(--primary-dark-green);
+}
+
+.primarybg-light {
+  background-color: var(--primary-light-green);
+  padding: 10px ;
+}
+
+.custom-navbar .nav-link {
+  color: var(--primary-white);
+}
+
+.nav-link:hover {
+  color: var(--primary-white) !important;
+  text-decoration: underline;
+}
+
+.custom-navbar .nav-link.active {
+  color: var(--primary-white) !important;
+}
+
+.carousel,
+.carousel-inner {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.fade-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  /* Adjust the height for the desired fading effect */
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  z-index: 1;
+}
+
+.carousel-caption {
+  position: relative;
+  z-index: 9;
+}
+
+.hero-image {
+  background-image: url('../images/Cars/z.jpg');
+  /* Replace with your hero image URL */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.hero-image-services {
+  background-image: url('../images/services/heroimgser.jpg');
+  /* Replace with your hero image URL */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image-contact {
+  background-image: url('../images/Cars/e class.jpg');
+  /* Replace with your hero image URL */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.contact-info {
+  margin: 20px 0;
+}
+
+.contact-info h2 {
+  color: #2d6a4f;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #2d6a4f;
+}
+
+.social-links a:hover {
+  text-decoration: none;
+}
+
+.bg-secondarycolorform {
+  background-color: var(--secondary-peach);
+  padding: 20px;
+}
+
+.feature-card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+.team-member {
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.slide-up {
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-up:hover {
+  transform: translateY(-5px);
+}

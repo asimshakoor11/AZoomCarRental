@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AZoom</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">AZoom Car Rental</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="car-listing.html">Car Listings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="car-reservation.html"
+                >Car Reservation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rental-confirm.html"
+                >Rental Confirmation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="car-return.html">Car Return</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="admin.html">Admin Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <div class="container my-5">
+      <h2
+        class="display-5 text-body-emphasis lh-1 mb-3 text-center alice-regular"
+      >
+        Returned Cars for Inspection
+      </h2>
+      <div class="list-group" id="returnedCarList">
+      </div>
+    </div>
+
+    <!-- Car Inspection Form -->
+    <div class="container my-5 d-none" id="carInspectionSection">
+      <h3 class="fw-bold">Inspect Car</h3>
+      <p><strong>Car:</strong> <span id="selectedCarName"></span></p>
+      <p><strong>Condition:</strong></p>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="carCondition"
+          id="notDamaged"
+          value="Not Damaged"
+          checked
+        />
+        <label class="form-check-label" for="notDamaged">Not Damaged</label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="carCondition"
+          id="damaged"
+          value="Damaged"
+        />
+        <label class="form-check-label" for="damaged">Damaged</label>
+      </div>
+      <button class="btn btn-success mt-3" id="approveCar">
+        Approve & Mark as Available
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white text-lg-start bg-success">
+      <div class="p-4">
+        <div class="row">
+          <!-- First Column: Business Info -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">AZoom Car Rental</h5>
+            <p>123 Main Street, Los Angeles, CA 90001</p>
+            <p>Call: (555) 123-4567</p>
+            <p>Email: support@azoomcarrental.com</p>
+            <p>Web: www.azoomcarrental.com</p>
+          </div>
+
+          <!-- Second Column: Useful Links -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/car-listing.html"
+                  >Car Listings</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/car-reservation.html"
+                  >Car Reservation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/rental-confirm.html"
+                  >Rental Confirmation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/car-return.html">Car Return</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/admin.html">Admin Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Third Column: Newsletter Signup and Social Media Icons -->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Subscribe for Updates</h5>
+            <form class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter your email"
+                aria-label="Email"
+              />
+              <button class="btn btn-primary">Subscribe</button>
+            </form>
+
+            <h5 class="text-uppercase">Follow Us</h5>
+            <ul class="list-unstyled d-flex">
+              <li class="mx-2">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-facebook fa-2x"></i
+                ></a>
+              </li>
+              <li class="mx-2">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-twitter fa-2x"></i
+                ></a>
+              </li>
+              <li class="mx-2">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-instagram fa-2x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3 primarybg-light">
+        © 2024 AZoom Car Rental. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="../script/scriptadmin.js"></script>
+  </body>
+</html>

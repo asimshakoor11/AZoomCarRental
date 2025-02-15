@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Car Listings - AZoom Car Rental</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-success">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">AZoom Car Rental</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="car-listing.html">Car Listings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="car-reservation.html"
+                >Car Reservation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rental-confirm.html"
+                >Rental Confirmation</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="car-return.html">Car Return</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin.html">Admin Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- Booking Lookup -->
+    <div class="container my-5">
+      <h2 class="display-5 text-body-emphasis lh-1 mb-3 text-center alice-regular">Return Your Rental Car</h2>
+      <div class="card shadow p-4">
+        <h5 class="fw-bold">Enter Your Booking ID</h5>
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            id="bookingIdInput"
+            placeholder="Enter Booking ID"
+          />
+          <button class="btn btn-primary" id="lookupBtn">Look Up</button>
+        </div>
+        <div id="bookingDetails" class="mt-4 d-none">
+          <h5 class="fw-bold">Booking Details</h5>
+          <p><span class="fw-bold">Car:</span> Toyota Corolla</p>
+          <p><span class="fw-bold">Pickup Date:</span> March 5, 2025</p>
+          <p><span class="fw-bold">Return Date:</span> March 10, 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Car Condition Checklist -->
+    <div class="container my-5">
+      <h2 class="display-5 text-body-emphasis lh-1 mb-3 text-center alice-regular">Car Condition Checklist</h2>
+      <div class="card shadow p-4">
+        <p>Check the applicable conditions before returning the car:</p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="noDamages" />
+          <label class="form-check-label" for="noDamages">No damages</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="minorScratches" />
+          <label class="form-check-label" for="minorScratches"
+            >Minor scratches</label
+          >
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="dents" />
+          <label class="form-check-label" for="dents">Dents</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="brokenLights" />
+          <label class="form-check-label" for="brokenLights"
+            >Broken lights/windows</label
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Bill Calculation -->
+    <div class="container my-5">
+      <h2 class="display-5 text-body-emphasis lh-1 mb-3 text-center alice-regular">Final Bill</h2>
+      <div class="card shadow p-4">
+        <p>
+          <span class="fw-bold">Damage Cost:</span>
+          <span id="damageCost">$0</span>
+        </p>
+        <hr />
+        <p>
+          <span class="fw-bold">Final Total:</span>
+          <span id="finalTotal">$250</span>
+        </p>
+        <button class="btn btn-success w-100" id="proceedPayment">
+          Proceed to Payment
+        </button>
+      </div>
+    </div>
+
+    <!-- Payment Confirmation -->
+    <div class="container my-5 d-none" id="paymentConfirmation">
+      <h2 class="text-center fw-bold text-success">✅ Payment Successful</h2>
+      <p class="text-center">
+        Your payment has been received. Thank you for choosing AZoom Car Rental!
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-white text-lg-start bg-success">
+      <div class="p-4">
+        <div class="row">
+          <!-- First Column: Business Info -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">AZoom Car Rental</h5>
+            <p>123 Main Street, Los Angeles, CA 90001</p>
+            <p>Call: (555) 123-4567</p>
+            <p>Email: support@azoomcarrental.com</p>
+            <p>Web: www.azoomcarrental.com</p>
+          </div>
+
+          <!-- Second Column: Useful Links -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/car-listing.html"
+                  >Car Listings</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/car-reservation.html"
+                  >Car Reservation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/rental-confirm.html"
+                  >Rental Confirmation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/car-return.html">Car Return</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/admin.html">Admin Page</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Third Column: Newsletter Signup and Social Media Icons -->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Subscribe for Updates</h5>
+            <form class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter your email"
+                aria-label="Email"
+              />
+              <button class="btn btn-primary" >Subscribe</button>
+            </form>
+
+            <h5 class="text-uppercase">Follow Us</h5>
+            <ul class="list-unstyled d-flex">
+              <li class="mx-2">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-facebook fa-2x"></i
+                ></a>
+              </li>
+              <li class="mx-2">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-twitter fa-2x"></i
+                ></a>
+              </li>
+              <li class="mx-2">
+                <a href="#" class="text-white"
+                  ><i class="fab fa-instagram fa-2x"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center p-3 primarybg-light">
+        © 2024 AZoom Car Rental. All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+     
+    </script>
+        <script src="../script/scriptcarreturn.js"></script>
+
+  </body>
+</html>
